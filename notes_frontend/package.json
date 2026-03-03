@@ -1,5 +1,5 @@
 {
-  "name": "nextjs",
+  "name": "notes-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.3"
+    "next": "15.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
+    "@eslint/eslintrc": "3.2.0",
+    "@tailwindcss/postcss": "4.1.3",
+    "@types/node": "20.17.30",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "eslint": "9.23.0",
     "eslint-config-next": "15.2.1",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "4.1.3",
+    "typescript": "5.6.3"
   }
 }
