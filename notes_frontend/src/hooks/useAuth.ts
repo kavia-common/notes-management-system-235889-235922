@@ -28,8 +28,14 @@ export type AuthActions = {
  */
 function getApiBaseUrl(): string {
   // Next.js client components can read NEXT_PUBLIC_* at build time.
-  // Fallback is the preview default from the work item.
-  return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:3001";
+  //
+  // NOTE: The preview environment provides NEXT_PUBLIC_API_BASE (not *_URL).
+  // Keep backwards compatibility with NEXT_PUBLIC_API_BASE_URL as a fallback.
+  return (
+    process.env.NEXT_PUBLIC_API_BASE ??
+    process.env.NEXT_PUBLIC_API_BASE_URL ??
+    "http://localhost:3001"
+  );
 }
 
 // PUBLIC_INTERFACE
